@@ -1,9 +1,13 @@
+
+
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
-        <title>Acuas - Drinking Water Website Template</title>
+        <title>River IQ </title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -18,15 +22,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
     </head>
 
     <body>
@@ -43,7 +47,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>Acuas</h1>
+                    <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>River IQ</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -51,7 +55,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <!-- <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
                         <div class="nav-item dropdown">
@@ -61,14 +65,14 @@
                                 <a href="blog.html" class="dropdown-item">Blog Posts</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                     </div>
-                    <div class="d-none d-xl-flex me-3">
+                    <!-- <div class="d-none d-xl-flex me-3">
                         <div class="d-flex flex-column pe-3 border-end border-primary">
                             <span class="text-body">Get Free Delivery</span>
                             <a href="tel:+4733378901"><span class="text-primary">Free: + 0123 456 7890</span></a>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="https://htmlcodex.com/downloading/?item=3402" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Buy Pro Version</a>
                 </div>
             </nav>
@@ -83,7 +87,7 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                            <img src="{% static 'img/carousel-1.jpg' %}" class="img-fluid w-100" alt="Image">
                             <div class="carousel-caption-1">
                                 <div class="carousel-caption-1-content" style="max-width: 900px;">
                                     <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Importance life</h4>
@@ -98,7 +102,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                            <img src="{% static 'img/carousel-2.jpg' %}" class="img-fluid w-100" alt="Image">
                             <div class="carousel-caption-2">
                                 <div class="carousel-caption-2-content" style="max-width: 900px;">
                                     <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Importance life</h4>
@@ -134,7 +138,7 @@
                 <div class="row g-5">
                     <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="about-img rounded h-100">
-                            <img src="img/about.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
+                            <img src="{% static 'img/about.jpg' %}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
                             <div class="about-exp"><span>20 Years Experiance</span></div>
                         </div>
                     </div>
@@ -239,7 +243,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="bg-transparent">
-                            <img src="img/water.png" class="img-fluid w-100" alt="">
+                            <img src="{% static 'img/water.png' %}" class="img-fluid w-100" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
@@ -305,7 +309,7 @@
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="product-item">
-                            <img src="img/product-3.png" class="img-fluid w-100 rounded-top"  alt="Image">
+                            <img src="{% static 'img/product-3.png' %}" class="img-fluid w-100 rounded-top"  alt="Image">
                             <div class="product-content bg-light text-center rounded-bottom p-4">
                                 <p>2L 1 Bottle</p>
                                 <a href="#" class="h4 d-inline-block mb-3">Mineral Water Bottle</a>
@@ -316,7 +320,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="product-item">
-                            <img src="img/product-2.png" class="img-fluid w-100 rounded-top"  alt="Image">
+                            <img src="{% static 'img/product-2.png' %}" class="img-fluid w-100 rounded-top"  alt="Image">
                             <div class="product-content bg-light text-center rounded-bottom p-4">
                                 <p>4L 2 Bottles</p>
                                 <a href="#" class="h4 d-inline-block mb-3">RO Water Bottle</a>
@@ -327,7 +331,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="product-item">
-                            <img src="img/product-1.png" class="img-fluid w-100 rounded-top"  alt="Image">
+                            <img src="{% static 'img/product-1.png' %}" class="img-fluid w-100 rounded-top"  alt="Image">
                             <div class="product-content bg-light text-center rounded-bottom p-4">
                                 <p>6L 3 Bottles</p>
                                 <a href="#" class="h4 d-inline-block mb-3">UV Water Bottle</a>
@@ -353,7 +357,7 @@
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <img src="img/blog-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="{% static 'img/blog-1.jpg' %}" class="img-fluid rounded-top w-100" alt="">
                                 <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
                             </div>
                             <div class="blog-content rounded-bottom p-4">
@@ -366,7 +370,7 @@
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <img src="img/blog-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="{% static 'img/blog-2.jpg' %}" class="img-fluid rounded-top w-100" alt="">
                                 <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
                             </div>
                             <div class="blog-content rounded-bottom p-4">
@@ -379,7 +383,7 @@
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <img src="img/blog-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="{% static 'img/blog-3.jpg' %}" class="img-fluid rounded-top w-100" alt="">
                                 <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
                             </div>
                             <div class="blog-content rounded-bottom p-4">
@@ -417,7 +421,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <div class="footer-item">
-                                <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>Acuas</h3>
+                                <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>River IQ</h3>
                                 <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
                             </div>
                             <div class="position-relative">
@@ -494,14 +498,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
     
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
     </body>
 
 </html>
