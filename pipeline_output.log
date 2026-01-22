@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/Users/user/Documents/GitHub/RiverIQ/improved_pipeline.py", line 20, in <module>
+    import xgboost as xgb
+  File "/Users/user/Documents/GitHub/RiverIQ/.venv/lib/python3.14/site-packages/xgboost/__init__.py", line 6, in <module>
+    from . import tracker  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Documents/GitHub/RiverIQ/.venv/lib/python3.14/site-packages/xgboost/tracker.py", line 9, in <module>
+    from .core import _LIB, _check_call, _deprecate_positional_args, make_jcargs
+  File "/Users/user/Documents/GitHub/RiverIQ/.venv/lib/python3.14/site-packages/xgboost/core.py", line 308, in <module>
+    _LIB = _load_lib()
+  File "/Users/user/Documents/GitHub/RiverIQ/.venv/lib/python3.14/site-packages/xgboost/core.py", line 270, in _load_lib
+            raise XGBoostError(
+    ...<13 lines>...
+            )
+xgboost.core.XGBoostError: 
+XGBoost Library (libxgboost.dylib) could not be loaded.
+Likely causes:
+  * OpenMP runtime is not installed
+    - vcomp140.dll or libgomp-1.dll for Windows
+    - libomp.dylib for Mac OSX
+    - libgomp.so for Linux and other UNIX-like OSes
+    Mac OSX users: Run `brew install libomp` to install OpenMP runtime.
+
+  * You are running 32-bit Python on a 64-bit OS
+
+Error message(s): ["dlopen(/Users/user/Documents/GitHub/RiverIQ/.venv/lib/python3.14/site-packages/xgboost/lib/libxgboost.dylib, 0x0006): Library not loaded: '@rpath/libomp.dylib'\n  Referenced from: '/Users/user/Documents/GitHub/RiverIQ/.venv/lib/python3.14/site-packages/xgboost/lib/libxgboost.dylib'\n  Reason: tried: '/usr/local/opt/libomp/lib/libomp.dylib' (no such file), '/usr/local/opt/libomp/lib/libomp.dylib' (no such file), '/usr/local/lib/libomp.dylib' (no such file), '/usr/lib/libomp.dylib' (no such file)"]
+

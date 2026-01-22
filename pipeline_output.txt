@@ -1,0 +1,39 @@
+
+[00:41:18] Loading datasets...
+[00:41:18] Data loaded and cleaned
+[00:41:18] Engineering features...
+[00:41:18] Imputing missing values...
+[00:41:24] Training models...
+
+  Training total_alkalinity...
+    R²: 0.5362, RMSE: 52.12, MAE: 32.32
+
+  Training electrical_conductance...
+    R²: 0.6877, RMSE: 203.67, MAE: 133.18
+
+  Training dissolved_reactive_phosphorus...
+    R²: 0.3348, RMSE: 38.41, MAE: 22.01
+
+[00:45:56] Generating submission...
+
+================================================================================
+MODEL PERFORMANCE
+================================================================================
+total_alkalinity               R²=0.5362  RMSE=52.12  MAE=32.32
+electrical_conductance         R²=0.6877  RMSE=203.67  MAE=133.18
+dissolved_reactive_phosphorus  R²=0.3348  RMSE=38.41  MAE=22.01
+
+================================================================================
+Submission saved to: /Users/user/Documents/GitHub/RiverIQ/data/RiverIQ_submission_improved.csv
+Rows: 200
+
+Sample predictions:
+    latitude  longitude  ... electrical_conductance  dissolved_reactive_phosphorus
+0 -32.043333  27.822778  ...             254.290127                      19.707060
+1 -33.329167  26.077500  ...             586.224639                      59.224817
+2 -32.991639  27.640028  ...             261.593433                      31.685223
+3 -34.096389  24.439167  ...             539.644118                      13.482810
+4 -32.000556  28.581667  ...             215.239101                      22.480723
+
+[5 rows x 6 columns]
+================================================================================
